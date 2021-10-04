@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Form Gaji</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Perusahaan WhaleX</h1>
+        <h2>Form Gaji</h2>
+        <form action="/form-gaji/hasil.php" method="post">
+            <br>
+            <label for="id">ID</label><br>
+            <input type="text" name="id" id="id"><br>
+
+            <label for="nama">nama</label><br>
+            <input type="text" name="nama" id="nama"><br>
+
+
+            <label for="jabatan">
+                jabatan
+            </label><br>
+            <select name="jabatan" id="jabatan">
+                <option value="Product Manager">Product Manager</option>
+                <option value="Producer">Producer</option>
+                <option value="Lead Programmer">Lead Programmer</option>
+                <option value="QA">Quality Assurance</option>
+            </select><br>
+
+            <label for="jam-lembur">
+                Total Jam Lembur Bulan ini
+            </label><br>
+            <input type="number" name="jam-lembur" id="jam-lembur" min="0" max="75"><br>
+
+
+
+            <label for="kehadiran">
+                Total Kehadiran Bulan ini
+            </label><br>
+            <input type="number" name="kehadiran" id="kehadiran" max="25" min="0"><br>
+
+            <button type="submit">Hitung</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
